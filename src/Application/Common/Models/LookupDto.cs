@@ -1,6 +1,6 @@
-﻿using CleanArchitect.Domain.Entities;
+﻿using CleanArchitecture.Domain.Entities;
 
-namespace CleanArchitect.Application.Common.Models;
+namespace CleanArchitecture.Application.Common.Models;
 public class LookupDto
 {
     public int Id { get; init; }

@@ -1,6 +1,6 @@
-﻿global using CleanArchitect.Domain.Common;
-global using CleanArchitect.Domain.Entities;
-global using CleanArchitect.Domain.Enums;
-global using CleanArchitect.Domain.Events;
-global using CleanArchitect.Domain.Exceptions;
-global using CleanArchitect.Domain.ValueObjects;
+﻿global using CleanArchitecture.Domain.Enums;
+global using CleanArchitecture.Domain.Events;
+global using learn_CleanArchitecture.Domain.Common;
+global using learn_CleanArchitecture.Domain.Entities;
+global using learn_CleanArchitecture.Domain.Exceptions;
+global using learn_CleanArchitecture.Domain.ValueObjects;

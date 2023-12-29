@@ -1,4 +1,4 @@
-﻿namespace CleanArchitect.Domain.Exceptions;
+﻿namespace learn_CleanArchitecture.Domain.Exceptions;
 
 public class UnsupportedColourException : Exception
 {

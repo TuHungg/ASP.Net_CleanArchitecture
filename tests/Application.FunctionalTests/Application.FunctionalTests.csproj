@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>CleanArchitect.Application.FunctionalTests</RootNamespace>
-        <AssemblyName>CleanArchitect.Application.FunctionalTests</AssemblyName>
+        <RootNamespace>learn_CleanArchitecture.Application.FunctionalTests</RootNamespace>
+        <AssemblyName>learn_CleanArchitecture.Application.FunctionalTests</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

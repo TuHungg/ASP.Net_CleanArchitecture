@@ -1,4 +1,4 @@
-using CleanArchitect.Infrastructure.Data;
+using learn_CleanArchitecture.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

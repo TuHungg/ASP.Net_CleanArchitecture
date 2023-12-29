@@ -1,19 +1,19 @@
 ﻿using System.Reflection;
-using CleanArchitect.Application.Common.Exceptions;
-using CleanArchitect.Application.Common.Interfaces;
-using CleanArchitect.Application.Common.Security;
+using CleanArchitecture.Application.Common.Interfaces;
+using CleanArchitecture.Application.Common.Security;
 
-namespace CleanArchitect.Application.Common.Behaviours;
+namespace CleanArchitecture.Application.Common.Behaviours;
+
 public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : notnull
 {
-    private readonly IUser _user;
+    private readonly ICurrentUserService _currentUserService;
     private readonly IIdentityService _identityService;
 
     public AuthorizationBehaviour(
-        IUser user,
+        ICurrentUserService currentUserService,
         IIdentityService identityService)
     {
-        _user = user;
+        _currentUserService = currentUserService;
         _identityService = identityService;
     }
 
@@ -24,7 +24,7 @@ public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRe
         if (authorizeAttributes.Any())
         {
             // Must be authenticated user
-            if (_user.Id == null)
+            if (_currentUserService.UserId == null)
             {
                 throw new UnauthorizedAccessException();
             }
@@ -34,42 +34,42 @@ public class AuthorizationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRe
 
             if (authorizeAttributesWithRoles.Any())
             {
-                var authorized = false;
+                //var authorized = false;
 
-                foreach (var roles in authorizeAttributesWithRoles.Select(a => a.Roles.Split(',')))
-                {
-                    foreach (var role in roles)
-                    {
-                        var isInRole = await _identityService.IsInRoleAsync(_user.Id, role.Trim());
-                        if (isInRole)
-                        {
-                            authorized = true;
-                            break;
-                        }
-                    }
-                }
+                //foreach (var roles in authorizeAttributesWithRoles.Select(a => a.Roles.Split(',')))
+                //{
+                //    foreach (var role in roles)
+                //    {
+                //        var isInRole = await _identityService.IsInRoleAsync(_currentUserService.UserId, role.Trim());
+                //        if (isInRole)
+                //        {
+                //            authorized = true;
+                //            break;
+                //        }
+                //    }
+                //}
 
-                // Must be a member of at least one role in roles
-                if (!authorized)
-                {
-                    throw new ForbiddenAccessException();
-                }
+                //// Must be a member of at least one role in roles
+                //if (!authorized)
+                //{
+                //    throw new ForbiddenAccessException();
+                //}
             }
 
             // Policy-based authorization
-            var authorizeAttributesWithPolicies = authorizeAttributes.Where(a => !string.IsNullOrWhiteSpace(a.Policy));
-            if (authorizeAttributesWithPolicies.Any())
-            {
-                foreach (var policy in authorizeAttributesWithPolicies.Select(a => a.Policy))
-                {
-                    var authorized = await _identityService.AuthorizeAsync(_user.Id, policy);
+            //var authorizeAttributesWithPolicies = authorizeAttributes.Where(a => !string.IsNullOrWhiteSpace(a.Policy));
+            //if (authorizeAttributesWithPolicies.Any())
+            //{
+            //    foreach (var policy in authorizeAttributesWithPolicies.Select(a => a.Policy))
+            //    {
+            //        var authorized = await _identityService.AuthorizeAsync(_currentUserService.UserId, policy);
 
-                    if (!authorized)
-                    {
-                        throw new ForbiddenAccessException();
-                    }
-                }
-            }
+            //        if (!authorized)
+            //        {
+            //            throw new ForbiddenAccessException();
+            //        }
+            //    }
+            //}
         }
 
         // User is authorized / authorization not required

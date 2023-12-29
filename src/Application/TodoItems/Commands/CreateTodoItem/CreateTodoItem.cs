@@ -1,8 +1,8 @@
-﻿using CleanArchitect.Application.Common.Interfaces;
-using CleanArchitect.Domain.Entities;
-using CleanArchitect.Domain.Events;
+﻿using CleanArchitecture.Application.Common.Interfaces;
+using CleanArchitecture.Domain.Entities;
+using CleanArchitecture.Domain.Events;
 
-namespace CleanArchitect.Application.TodoItems.Commands.CreateTodoItem;
+namespace CleanArchitecture.Application.TodoItems.Commands.CreateTodoItem;
 public record CreateTodoItemCommand : IRequest<int>
 {
     public int ListId { get; init; }

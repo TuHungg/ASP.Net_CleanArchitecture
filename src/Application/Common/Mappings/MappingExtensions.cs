@@ -1,6 +1,6 @@
-﻿using CleanArchitect.Application.Common.Models;
+﻿using CleanArchitecture.Application.Common.Models;
 
-namespace CleanArchitect.Application.Common.Mappings;
+namespace CleanArchitecture.Application.Common.Mappings;
 public static class MappingExtensions
 {
     public static Task<PaginatedList<TDestination>> PaginatedListAsync<TDestination>(this IQueryable<TDestination> queryable, int pageNumber, int pageSize) where TDestination : class

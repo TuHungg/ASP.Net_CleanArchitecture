@@ -1,8 +1,8 @@
-﻿using CleanArchitect.Application.Common.Exceptions;
+﻿using learn_CleanArchitecture.Application.Common.Exceptions;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchitect.Web.Infrastructure;
+namespace learn_CleanArchitecture.Web.Infrastructure;
 public class CustomExceptionHandler : IExceptionHandler
 {
     private readonly Dictionary<Type, Func<HttpContext, Exception, Task>> _exceptionHandlers;

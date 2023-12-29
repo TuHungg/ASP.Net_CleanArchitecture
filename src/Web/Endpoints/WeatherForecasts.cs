@@ -1,6 +1,6 @@
-﻿using CleanArchitect.Application.WeatherForecasts.Queries.GetWeatherForecasts;
+﻿using learn_CleanArchitecture.Application.WeatherForecasts.Queries.GetWeatherForecasts;
 
-namespace CleanArchitect.Web.Endpoints;
+namespace learn_CleanArchitecture.Web.Endpoints;
 public class WeatherForecasts : EndpointGroupBase
 {
     public override void Map(WebApplication app)

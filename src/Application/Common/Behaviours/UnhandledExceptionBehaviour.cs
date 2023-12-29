@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace CleanArchitect.Application.Common.Behaviours;
+namespace CleanArchitecture.Application.Common.Behaviours;
 public class UnhandledExceptionBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : notnull
 {
     private readonly ILogger<TRequest> _logger;
@@ -20,7 +20,7 @@ public class UnhandledExceptionBehaviour<TRequest, TResponse> : IPipelineBehavio
         {
             var requestName = typeof(TRequest).Name;
 
-            _logger.LogError(ex, "CleanArchitect Request: Unhandled Exception for Request {Name} {@Request}", requestName, request);
+            _logger.LogError(ex, "learn_CleanArchitecture Request: Unhandled Exception for Request {Name} {@Request}", requestName, request);
 
             throw;
         }

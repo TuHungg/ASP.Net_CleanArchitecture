@@ -1,9 +1,9 @@
-﻿using CleanArchitect.Application.TodoLists.Commands.CreateTodoList;
-using CleanArchitect.Application.TodoLists.Commands.DeleteTodoList;
-using CleanArchitect.Application.TodoLists.Commands.UpdateTodoList;
-using CleanArchitect.Application.TodoLists.Queries.GetTodos;
+﻿using learn_CleanArchitecture.Application.TodoLists.Commands.CreateTodoList;
+using learn_CleanArchitecture.Application.TodoLists.Commands.DeleteTodoList;
+using learn_CleanArchitecture.Application.TodoLists.Commands.UpdateTodoList;
+using learn_CleanArchitecture.Application.TodoLists.Queries.GetTodos;
 
-namespace CleanArchitect.Web.Endpoints;
+namespace learn_CleanArchitecture.Web.Endpoints;
 public class TodoLists : EndpointGroupBase
 {
     public override void Map(WebApplication app)

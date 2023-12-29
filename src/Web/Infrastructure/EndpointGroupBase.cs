@@ -1,4 +1,4 @@
-﻿namespace CleanArchitect.Web.Infrastructure;
+﻿namespace learn_CleanArchitecture.Web.Infrastructure;
 
 public abstract class EndpointGroupBase
 {

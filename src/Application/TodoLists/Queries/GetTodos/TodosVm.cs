@@ -1,6 +1,6 @@
-﻿using CleanArchitect.Application.Common.Models;
+﻿using CleanArchitecture.Application.Common.Models;
 
-namespace CleanArchitect.Application.TodoLists.Queries.GetTodos;
+namespace CleanArchitecture.Application.TodoLists.Queries.GetTodos;
 public class TodosVm
 {
     public IReadOnlyCollection<LookupDto> PriorityLevels { get; init; } = Array.Empty<LookupDto>();

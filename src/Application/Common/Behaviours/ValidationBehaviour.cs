@@ -1,6 +1,6 @@
-﻿using ValidationException = CleanArchitect.Application.Common.Exceptions.ValidationException;
+﻿using ValidationException = learn_CleanArchitecture.Application.Common.Exceptions.ValidationException;
 
-namespace CleanArchitect.Application.Common.Behaviours;
+namespace CleanArchitecture.Application.Common.Behaviours;
 public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
      where TRequest : notnull
 {

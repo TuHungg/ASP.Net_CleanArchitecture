@@ -1,11 +1,11 @@
-﻿using CleanArchitect.Application.Common.Models;
-using CleanArchitect.Application.TodoItems.Commands.CreateTodoItem;
-using CleanArchitect.Application.TodoItems.Commands.DeleteTodoItem;
-using CleanArchitect.Application.TodoItems.Commands.UpdateTodoItem;
-using CleanArchitect.Application.TodoItems.Commands.UpdateTodoItemDetail;
-using CleanArchitect.Application.TodoItems.Queries.GetTodoItemsWithPagination;
+﻿using learn_CleanArchitecture.Application.Common.Models;
+using learn_CleanArchitecture.Application.TodoItems.Commands.CreateTodoItem;
+using learn_CleanArchitecture.Application.TodoItems.Commands.DeleteTodoItem;
+using learn_CleanArchitecture.Application.TodoItems.Commands.UpdateTodoItem;
+using learn_CleanArchitecture.Application.TodoItems.Commands.UpdateTodoItemDetail;
+using learn_CleanArchitecture.Application.TodoItems.Queries.GetTodoItemsWithPagination;
 
-namespace CleanArchitect.Web.Endpoints;
+namespace learn_CleanArchitecture.Web.Endpoints;
 public class TodoItems : EndpointGroupBase
 {
     public override void Map(WebApplication app)

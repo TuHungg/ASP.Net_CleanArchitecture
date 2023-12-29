@@ -1,7 +1,7 @@
-﻿using CleanArchitect.Application.Common.Interfaces;
-using CleanArchitect.Domain.Events;
+﻿using CleanArchitecture.Application.Common.Interfaces;
+using CleanArchitecture.Domain.Events;
 
-namespace CleanArchitect.Application.TodoItems.Commands.DeleteTodoItem;
+namespace learn_CleanArchitecture.Application.TodoItems.Commands.DeleteTodoItem;
 public record DeleteTodoItemCommand(int Id) : IRequest;
 
 public class DeleteTodoItemCommandHandler : IRequestHandler<DeleteTodoItemCommand>

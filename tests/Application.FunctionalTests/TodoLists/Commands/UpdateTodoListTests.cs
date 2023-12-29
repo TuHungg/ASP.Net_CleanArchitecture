@@ -1,11 +1,11 @@
-﻿using CleanArchitect.Application.Common.Exceptions;
-using CleanArchitect.Application.TodoLists.Commands.CreateTodoList;
-using CleanArchitect.Application.TodoLists.Commands.UpdateTodoList;
-using CleanArchitect.Domain.Entities;
+﻿using learn_CleanArchitecture.Application.Common.Exceptions;
+using learn_CleanArchitecture.Application.TodoLists.Commands.CreateTodoList;
+using learn_CleanArchitecture.Application.TodoLists.Commands.UpdateTodoList;
+using learn_CleanArchitecture.Domain.Entities;
 
 using static Testing;
 
-namespace CleanArchitect.Application.FunctionalTests.TodoLists.Commands;
+namespace learn_CleanArchitecture.Application.FunctionalTests.TodoLists.Commands;
 public class UpdateTodoListTests : BaseTestFixture
 {
     [Test]

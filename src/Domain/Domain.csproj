@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>CleanArchitect.Domain</RootNamespace>
-    <AssemblyName>CleanArchitect.Domain</AssemblyName>
+    <RootNamespace>CleanArchitecture.Domain</RootNamespace>
+    <AssemblyName>CleanArchitecture.Domain</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR" />
+    <PackageReference Include="Newtonsoft.Json" />
   </ItemGroup>
 
 </Project>

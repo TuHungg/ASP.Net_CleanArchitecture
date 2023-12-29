@@ -1,6 +1,6 @@
-﻿using CleanArchitect.Application.Common.Interfaces;
+﻿using CleanArchitecture.Application.Common.Interfaces;
 
-namespace CleanArchitect.Application.TodoLists.Commands.CreateTodoList;
+namespace CleanArchitecture.Application.TodoLists.Commands.CreateTodoList;
 public class CreateTodoListCommandValidator : AbstractValidator<CreateTodoListCommand>
 {
     private readonly IApplicationDbContext _context;

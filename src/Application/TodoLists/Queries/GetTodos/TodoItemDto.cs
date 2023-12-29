@@ -1,6 +1,6 @@
-﻿using CleanArchitect.Domain.Entities;
+﻿using CleanArchitecture.Domain.Entities;
 
-namespace CleanArchitect.Application.TodoLists.Queries.GetTodos;
+namespace CleanArchitecture.Application.TodoLists.Queries.GetTodos;
 public class TodoItemDto
 {
     public int Id { get; init; }

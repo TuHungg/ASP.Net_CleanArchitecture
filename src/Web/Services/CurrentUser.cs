@@ -1,8 +1,8 @@
 ﻿using System.Security.Claims;
 
-using CleanArchitect.Application.Common.Interfaces;
+using learn_CleanArchitecture.Application.Common.Interfaces;
 
-namespace CleanArchitect.Web.Services;
+namespace learn_CleanArchitecture.Web.Services;
 public class CurrentUser : IUser
 {
     private readonly IHttpContextAccessor _httpContextAccessor;

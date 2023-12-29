@@ -1,11 +1,11 @@
-﻿using CleanArchitect.Application.Common.Behaviours;
-using CleanArchitect.Application.Common.Interfaces;
-using CleanArchitect.Application.TodoItems.Commands.CreateTodoItem;
+﻿using learn_CleanArchitecture.Application.Common.Behaviours;
+using learn_CleanArchitecture.Application.Common.Interfaces;
+using learn_CleanArchitecture.Application.TodoItems.Commands.CreateTodoItem;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
 
-namespace CleanArchitect.Application.UnitTests.Common.Behaviours;
+namespace learn_CleanArchitecture.Application.UnitTests.Common.Behaviours;
 public class RequestLoggerTests
 {
     private Mock<ILogger<CreateTodoItemCommand>> _logger = null!;

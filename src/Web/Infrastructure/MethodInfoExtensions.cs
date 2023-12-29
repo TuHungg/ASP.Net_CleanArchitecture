@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace CleanArchitect.Web.Infrastructure;
+namespace learn_CleanArchitecture.Web.Infrastructure;
 public static class MethodInfoExtensions
 {
     public static bool IsAnonymous(this MethodInfo method)

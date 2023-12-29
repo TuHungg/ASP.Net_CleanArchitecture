@@ -1,4 +1,4 @@
-﻿namespace CleanArchitect.Application.Common.Models;
+﻿namespace learn_CleanArchitecture.Application.Common.Models;
 
 public class Result
 {

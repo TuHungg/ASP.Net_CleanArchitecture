@@ -1,12 +1,12 @@
-﻿using CleanArchitect.Domain.Constants;
-using CleanArchitect.Infrastructure.Data;
-using CleanArchitect.Infrastructure.Identity;
+﻿using learn_CleanArchitecture.Domain.Constants;
+using learn_CleanArchitecture.Infrastructure.Data;
+using learn_CleanArchitecture.Infrastructure.Identity;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CleanArchitect.Application.FunctionalTests;
+namespace learn_CleanArchitecture.Application.FunctionalTests;
 [SetUpFixture]
 public partial class Testing
 {

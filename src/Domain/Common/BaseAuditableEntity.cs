@@ -1,4 +1,4 @@
-﻿namespace CleanArchitect.Domain.Common;
+﻿namespace learn_CleanArchitecture.Domain.Common;
 
 public abstract class BaseAuditableEntity : BaseEntity
 {

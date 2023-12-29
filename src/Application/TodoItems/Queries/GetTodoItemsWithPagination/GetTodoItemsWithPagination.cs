@@ -1,8 +1,8 @@
-﻿using CleanArchitect.Application.Common.Interfaces;
-using CleanArchitect.Application.Common.Mappings;
-using CleanArchitect.Application.Common.Models;
+﻿using CleanArchitecture.Application.Common.Interfaces;
+using CleanArchitecture.Application.Common.Mappings;
+using CleanArchitecture.Application.Common.Models;
 
-namespace CleanArchitect.Application.TodoItems.Queries.GetTodoItemsWithPagination;
+namespace CleanArchitecture.Application.TodoItems.Queries.GetTodoItemsWithPagination;
 public record GetTodoItemsWithPaginationQuery : IRequest<PaginatedList<TodoItemBriefDto>>
 {
     public int ListId { get; init; }

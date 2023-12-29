@@ -1,6 +1,6 @@
 ﻿using System.Data.Common;
 
-namespace CleanArchitect.Application.FunctionalTests;
+namespace learn_CleanArchitecture.Application.FunctionalTests;
 public interface ITestDatabase
 {
     Task InitialiseAsync();

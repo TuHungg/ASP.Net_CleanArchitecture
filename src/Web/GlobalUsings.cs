@@ -1,3 +1,3 @@
 global using Ardalis.GuardClauses;
-global using CleanArchitect.Web.Infrastructure;
+global using learn_CleanArchitecture.Web.Infrastructure;
 global using MediatR;

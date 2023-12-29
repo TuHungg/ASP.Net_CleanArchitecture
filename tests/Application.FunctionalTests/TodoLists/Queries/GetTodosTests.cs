@@ -1,10 +1,10 @@
-﻿using CleanArchitect.Application.TodoLists.Queries.GetTodos;
-using CleanArchitect.Domain.Entities;
-using CleanArchitect.Domain.ValueObjects;
+﻿using learn_CleanArchitecture.Application.TodoLists.Queries.GetTodos;
+using learn_CleanArchitecture.Domain.Entities;
+using learn_CleanArchitecture.Domain.ValueObjects;
 
 using static Testing;
 
-namespace CleanArchitect.Application.FunctionalTests.TodoLists.Queries;
+namespace learn_CleanArchitecture.Application.FunctionalTests.TodoLists.Queries;
 public class GetTodosTests : BaseTestFixture
 {
     [Test]

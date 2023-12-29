@@ -1,13 +1,13 @@
-﻿using CleanArchitect.Application.TodoItems.Commands.CreateTodoItem;
-using CleanArchitect.Application.TodoItems.Commands.UpdateTodoItem;
-using CleanArchitect.Application.TodoItems.Commands.UpdateTodoItemDetail;
-using CleanArchitect.Application.TodoLists.Commands.CreateTodoList;
-using CleanArchitect.Domain.Entities;
-using CleanArchitect.Domain.Enums;
+﻿using learn_CleanArchitecture.Application.TodoItems.Commands.CreateTodoItem;
+using learn_CleanArchitecture.Application.TodoItems.Commands.UpdateTodoItem;
+using learn_CleanArchitecture.Application.TodoItems.Commands.UpdateTodoItemDetail;
+using learn_CleanArchitecture.Application.TodoLists.Commands.CreateTodoList;
+using learn_CleanArchitecture.Domain.Entities;
+using learn_CleanArchitecture.Domain.Enums;
 
 using static Testing;
 
-namespace CleanArchitect.Application.FunctionalTests.TodoItems.Commands;
+namespace learn_CleanArchitecture.Application.FunctionalTests.TodoItems.Commands;
 public class UpdateTodoItemDetailTests : BaseTestFixture
 {
     [Test]

@@ -1,6 +1,6 @@
-﻿using CleanArchitect.Application.Common.Interfaces;
+﻿using CleanArchitecture.Application.Common.Interfaces;
 
-namespace CleanArchitect.Application.TodoItems.Commands.UpdateTodoItem;
+namespace CleanArchitecture.Application.TodoItems.Commands.UpdateTodoItem;
 public record UpdateTodoItemCommand : IRequest
 {
     public int Id { get; init; }

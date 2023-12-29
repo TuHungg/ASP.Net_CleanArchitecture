@@ -1,4 +1,4 @@
-﻿namespace CleanArchitect.Application.WeatherForecasts.Queries.GetWeatherForecasts;
+﻿namespace learn_CleanArchitecture.Application.WeatherForecasts.Queries.GetWeatherForecasts;
 
 public record GetWeatherForecastsQuery : IRequest<IEnumerable<WeatherForecast>>;
 

@@ -1,4 +1,4 @@
-﻿namespace CleanArchitect.Application.FunctionalTests;
+﻿namespace learn_CleanArchitecture.Application.FunctionalTests;
 
 using static Testing;
 

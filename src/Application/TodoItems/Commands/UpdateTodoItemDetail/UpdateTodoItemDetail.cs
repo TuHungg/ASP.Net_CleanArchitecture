@@ -1,7 +1,7 @@
-﻿using CleanArchitect.Application.Common.Interfaces;
-using CleanArchitect.Domain.Enums;
+﻿using CleanArchitecture.Application.Common.Interfaces;
+using CleanArchitecture.Domain.Enums;
 
-namespace CleanArchitect.Application.TodoItems.Commands.UpdateTodoItemDetail;
+namespace CleanArchitecture.Application.TodoItems.Commands.UpdateTodoItemDetail;
 public record UpdateTodoItemDetailCommand : IRequest
 {
     public int Id { get; init; }

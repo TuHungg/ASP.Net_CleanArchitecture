@@ -1,14 +1,14 @@
 ﻿using System.Reflection;
 using System.Runtime.Serialization;
 using AutoMapper;
-using CleanArchitect.Application.Common.Interfaces;
-using CleanArchitect.Application.Common.Models;
-using CleanArchitect.Application.TodoItems.Queries.GetTodoItemsWithPagination;
-using CleanArchitect.Application.TodoLists.Queries.GetTodos;
-using CleanArchitect.Domain.Entities;
+using learn_CleanArchitecture.Application.Common.Interfaces;
+using learn_CleanArchitecture.Application.Common.Models;
+using learn_CleanArchitecture.Application.TodoItems.Queries.GetTodoItemsWithPagination;
+using learn_CleanArchitecture.Application.TodoLists.Queries.GetTodos;
+using learn_CleanArchitecture.Domain.Entities;
 using NUnit.Framework;
 
-namespace CleanArchitect.Application.UnitTests.Common.Mappings;
+namespace learn_CleanArchitecture.Application.UnitTests.Common.Mappings;
 public class MappingTests
 {
     private readonly IConfigurationProvider _configuration;

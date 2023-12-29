@@ -1,6 +1,6 @@
-﻿using CleanArchitect.Domain.Entities;
+﻿using CleanArchitecture.Domain.Entities;
 
-namespace CleanArchitect.Application.TodoItems.Queries.GetTodoItemsWithPagination;
+namespace CleanArchitecture.Application.TodoItems.Queries.GetTodoItemsWithPagination;
 public class TodoItemBriefDto
 {
     public int Id { get; init; }

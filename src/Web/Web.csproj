@@ -4,8 +4,8 @@
     <SpaRoot>ClientApp\</SpaRoot>
     <SpaProxyServerUrl>https://localhost:44447</SpaProxyServerUrl>
     <SpaProxyLaunchCommand>npm start</SpaProxyLaunchCommand>
-    <RootNamespace>CleanArchitect.Web</RootNamespace>
-    <AssemblyName>CleanArchitect.Web</AssemblyName>
+    <RootNamespace>CleanArchitecture.Web</RootNamespace>
+    <AssemblyName>CleanArchitecture.Web</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

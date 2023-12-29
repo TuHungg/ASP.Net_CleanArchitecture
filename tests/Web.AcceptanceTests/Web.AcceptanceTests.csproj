@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>CleanArchitect.Web.AcceptanceTests</RootNamespace>
-        <AssemblyName>CleanArchitect.Web.AcceptanceTests</AssemblyName>
+        <RootNamespace>learn_CleanArchitecture.Web.AcceptanceTests</RootNamespace>
+        <AssemblyName>learn_CleanArchitecture.Web.AcceptanceTests</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

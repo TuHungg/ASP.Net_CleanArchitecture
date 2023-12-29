@@ -1,4 +1,4 @@
-﻿namespace CleanArchitect.Web.AcceptanceTests.Pages;
+﻿namespace learn_CleanArchitecture.Web.AcceptanceTests.Pages;
 
 public abstract class BasePage
 {

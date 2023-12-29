@@ -1,7 +1,7 @@
 ﻿using Azure.Identity;
-using CleanArchitect.Application.Common.Interfaces;
-using CleanArchitect.Infrastructure.Data;
-using CleanArchitect.Web.Services;
+using learn_CleanArchitecture.Application.Common.Interfaces;
+using learn_CleanArchitecture.Infrastructure.Data;
+using learn_CleanArchitecture.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 
 using ZymLabs.NSwag.FluentValidation;
@@ -40,7 +40,7 @@ public static class DependencyInjection
 
         services.AddOpenApiDocument((configure, sp) =>
         {
-            configure.Title = "CleanArchitect API";
+            configure.Title = "learn_CleanArchitecture API";
 
 
             // Add the fluent validations schema processor

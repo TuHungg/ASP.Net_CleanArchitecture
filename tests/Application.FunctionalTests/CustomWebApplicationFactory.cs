@@ -1,6 +1,6 @@
 ﻿using System.Data.Common;
-using CleanArchitect.Application.Common.Interfaces;
-using CleanArchitect.Infrastructure.Data;
+using learn_CleanArchitecture.Application.Common.Interfaces;
+using learn_CleanArchitecture.Infrastructure.Data;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.AspNetCore.TestHost;
@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 
 using static Testing;
 
-namespace CleanArchitect.Application.FunctionalTests;
+namespace learn_CleanArchitecture.Application.FunctionalTests;
 public class CustomWebApplicationFactory : WebApplicationFactory<Program>
 {
     private readonly DbConnection _connection;

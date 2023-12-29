@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <RootNamespace>CleanArchitect.Infrastructure.IntegrationTests</RootNamespace>
-        <AssemblyName>CleanArchitect.Infrastructure.IntegrationTests</AssemblyName>
+        <RootNamespace>learn_CleanArchitecture.Infrastructure.IntegrationTests</RootNamespace>
+        <AssemblyName>learn_CleanArchitecture.Infrastructure.IntegrationTests</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>

@@ -1,11 +1,13 @@
-﻿using CleanArchitect.Application.Common.Interfaces;
-using CleanArchitect.Application.Common.Security;
-using CleanArchitect.Domain.Constants;
+﻿using CleanArchitecture.Application.Common.Interfaces;
+using CleanArchitecture.Application.Common.Security;
 
-namespace CleanArchitect.Application.TodoLists.Commands.PurgeTodoLists;
-[Authorize(Roles = Roles.Administrator)]
-[Authorize(Policy = Policies.CanPurge)]
-public record PurgeTodoListsCommand : IRequest;
+namespace CleanArchitecture.Application.TodoLists.Commands.PurgeTodoLists;
+
+[Authorize(Roles = "Administrator")]
+[Authorize(Policy = "CanPurge")]
+public class PurgeTodoListsCommand : IRequest
+{
+}
 
 public class PurgeTodoListsCommandHandler : IRequestHandler<PurgeTodoListsCommand>
 {
@@ -16,10 +18,17 @@ public class PurgeTodoListsCommandHandler : IRequestHandler<PurgeTodoListsComman
         _context = context;
     }
 
-    public async Task Handle(PurgeTodoListsCommand request, CancellationToken cancellationToken)
+    public async Task<Unit> Handle(PurgeTodoListsCommand request, CancellationToken cancellationToken)
     {
         _context.TodoLists.RemoveRange(_context.TodoLists);
 
         await _context.SaveChangesAsync(cancellationToken);
+
+        return Unit.Value;
+    }
+
+    Task IRequestHandler<PurgeTodoListsCommand>.Handle(PurgeTodoListsCommand request, CancellationToken cancellationToken)
+    {
+        throw new NotImplementedException();
     }
 }

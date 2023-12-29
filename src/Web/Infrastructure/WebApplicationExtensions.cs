@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace CleanArchitect.Web.Infrastructure;
+namespace learn_CleanArchitecture.Web.Infrastructure;
 public static class WebApplicationExtensions
 {
     public static RouteGroupBuilder MapGroup(this WebApplication app, EndpointGroupBase group)

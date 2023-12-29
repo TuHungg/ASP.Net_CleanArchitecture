@@ -1,11 +1,11 @@
 ﻿using System.Data.Common;
-using CleanArchitect.Infrastructure.Data;
+using learn_CleanArchitecture.Infrastructure.Data;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Respawn;
 
-namespace CleanArchitect.Application.FunctionalTests;
+namespace learn_CleanArchitecture.Application.FunctionalTests;
 public class SqlServerTestDatabase : ITestDatabase
 {
     private readonly string _connectionString = null!;
